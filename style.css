@@ -1,0 +1,60 @@
+.calculator {
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #070707;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Now inside the braces */
+}
+.display {
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+  background-color: #15FF00;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: auto; 
+}
+
+/* buttons styling */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  height: 80px;
+  font-size: 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #C2EDBE;
+}
+
+button:hover {
+  background-color: #9d9d9d;
+}
+
+
+/* centering a div in CSS - the classic */
+body{
+  display: flex; 
+   /*now our body is a flex box  */
+  justify-content: center;
+  padding-top: 80px;
+}
+
+
+.equals_button{
+  grid-column: span 2; 
+  background-color: #15FF00;
+  /* doesnt break the grid. allows = to take 2 boxes */
+  /* width: 140px; */
+}
+
+.special_buttons:hover{
+  background-color: #15FF00;
+}
